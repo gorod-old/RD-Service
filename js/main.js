@@ -149,6 +149,13 @@ $(document).ready(function(){
         nav = nav_list[0];       
         //var bg_list = document.getElementsByClassName("color-bg");
         $('.menu-bt').click(function(){
+             menuClick();        
+        })
+        $('.menu-bt-vert').click(function(){
+            menuClick();        
+       })
+
+        function menuClick(){
             if(!menu_click){
                 menu_click = true;
                 if(nav_bg.contains('nav-anim')){ 
@@ -181,8 +188,8 @@ $(document).ready(function(){
                     //     bg_list[i].classList.add('white-bg');
                     // }
                 }
-            }           
-        })
+            } 
+        }
 
         $('.home-bt').click(function(){
             nav_close();
